@@ -1,0 +1,130 @@
+{
+    "data": [
+      {
+        "name": "iPhone 14",
+        "category": "mobile",
+        "stock": true
+      },
+      {
+        "name": "realme 14",
+        "category": "mobile",
+        "stock": false
+      },
+      {
+        "name": "Redmi 9",
+        "category": "mobile",
+        "stock": false
+      },
+      {
+        "name": "MacBook Pro",
+        "category": "laptop",
+        "stock": true
+      },
+      {
+        "name": "Asus Vivobook",
+        "category": "laptop",
+        "stock": true
+      },
+      {
+        "name": "Dell",
+        "category": "laptop",
+        "stock": true
+      },
+      {
+        "name": "HP smartBook",
+        "category": "laptop",
+        "stock": true
+      },
+      {
+        "name": "Dell Lenove Yoga",
+        "category": "laptop",
+        "stock": true
+      },
+      {
+        "name": "Samsung QLED TV",
+        "category": "tv",
+        "stock": false
+      },
+      {
+        "name": "LG QLED TV",
+        "category": "tv",
+        "stock": false
+      },
+      {
+        "name": "Gionee QLED TV",
+        "category": "tv",
+        "stock": false
+      },
+      {
+        "name": "Sony QLED TV",
+        "category": "tv",
+        "stock": false
+      },
+      {
+        "name": "Levi's T-Shirt",
+        "category": "tshirts",
+        "stock": true
+      },
+      {
+        "name": "Zara's T-Shirt",
+        "category": "tshirts",
+        "stock": true
+      },
+      {
+        "name": "POLO's T-Shirt",
+        "category": "tshirts",
+        "stock": true
+      },
+      {
+        "name": "bissons's T-Shirt",
+        "category": "tshirts",
+        "stock": true
+      },
+      {
+        "name": "LG Refrigerator",
+        "category": "fridges",
+        "stock": false
+      },
+      {
+        "name": "Godrej Fridge",
+        "category": "fridges",
+        "stock": false
+      },
+      {
+        "name": "Whirpoll Doubledoor",
+        "category": "fridges",
+        "stock": false
+      },
+      {
+        "name": "Parker Pen",
+        "category": "pens",
+        "stock": true
+      },
+      {
+        "name": "Blue Pen",
+        "category": "pens",
+        "stock": true
+      },
+      {
+        "name": "Black Pen",
+        "category": "pens",
+        "stock": true
+      },
+      {
+        "name": "The Alchemist",
+        "category": "books",
+        "stock": true
+      },
+      {
+        "name": "Science 12th Book",
+        "category": "books",
+        "stock": false
+      },
+      {
+        "name": "God is Great",
+        "category": "books",
+        "stock": true
+      }
+    ]
+  }
+  

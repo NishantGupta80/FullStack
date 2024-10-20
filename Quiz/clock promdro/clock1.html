@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Timer</title>
+    <link rel="stylesheet" href="clock1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Session and Break Timer</h1>
+        <div>
+            <label for="sessionTime">Session Time (minutes): </label>
+            <input type="number" id="sessionTime" value="1">
+        </div>
+        <div>
+            <label for="breakInterval">Break Interval (minutes): </label>
+            <input type="number" id="breakInterval" value="1">
+        </div>
+        <div>
+            <label for="breakDuration">Break Duration (minutes): </label>
+            <input type="number" id="breakDuration" value="1">
+        </div>
+        <button onclick="startTimer()">Start Timer</button>
+        <div id="timerDisplay">Timer: 00:00</div>
+        <div id="breakCount">Breaks Taken: 0</div>
+        <div id="projectTime">Total Project Time: 00:00</div>
+        <div id="breakIntervalDisplay">Next Break Interval: --:--</div>
+    </div>
+    <script src="clock1.js"></script>
+</body>
+</html>

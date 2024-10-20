@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form id="uploadForm" action="/Upload" method="POST" enctype="multipart/form-data">
+        <h1>Hello <%= name %></h1>
+        <h1>Admin DASHBOARD</h1>
+
+        <div id="showBtns">
+            <button type="button" onclick="seeUsers()"> Show All the Users</button>
+        </div>
+        <br>
+
+        <label for="image">Upload Your Image:</label>
+        <input type="file" name="Image" id="image" required>
+
+            <button type="submit" id="uploadBtn">Upload</button>
+
+   
+    </form>
+
+    <div id="usersList">
+    
+    </div>
+
+    <input id="logout" type="button" onclick="logout()" value="Logout">
+
+
+    <script>
+        
+        function logout() {
+            fetch('/logout', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = '/';
+                } else {
+                    alert('Failed to log out. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error during logout:', error);
+                alert('An error occurred while logging out.');
+            });
+        }
+
+  function seeUsers(){
+         console.log("btn Clicked");
+         fetch('/seeAllusers', {
+        method: 'GET'
+        })
+    .then(response => response.json()) 
+    .then(data => {
+    
+        const usersList = document.getElementById('usersList');
+        usersList.innerHTML = ''; 
+
+        data.users.forEach(user => {
+            const userDiv = document.createElement('div');
+            userDiv.id = "profiles"
+            
+            
+            const imagePath = user.role == 'user' ? `/users/${user.imageName}` : `/admins/${user.imageName}`;
+            const email = user.userId;
+            const name = email.split('@')[0];
+
+            userDiv.innerHTML = `
+                
+                <p>Image: <img src="${imagePath}" width="100"></p>
+                <p>Name: ${name}, Email: ${email}</p>
+                <p>Role: ${user.role} </p>`
+                
+            usersList.appendChild(userDiv);
+        });
+    })
+    .catch(error => {
+        console.error('Error fetching users:', error);
+    });
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+    <form id="uploadForm" action="/Upload" method="POST" enctype="multipart/form-data">
+        <h1>Hello <%= name %></h1>
+        <h1>User DASHBOARD</h1>
+
+        <br>
+
+        <label for="image">Upload Your Image:</label>
+        <input type="file" name="Image" id="image" required>
+
+            <button type="submit" id="uploadBtn">Upload</button>
+
+
+    </form>
+    <input id="logout" type="button" onclick="logout()" value="Logout">
+
+    <script>
+
+        function logout() {
+            fetch('/logout', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+               
+                    window.location.href = '/';
+                } else {
+                    alert('Internal errir');
+                }
+            })
+            .catch(error => {
+                console.error(error);
+                alert('Something Went Wrong');
+            });
+        }
+    </script>
+</body>
+</html>

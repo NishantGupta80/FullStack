@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #quiz-container {
+            text-align: center;
+        }
+        button {
+            margin: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="start-screen">
+            <button id="start-button">Start Quiz</button>
+        </div>
+        <div id="quiz-screen" class="hidden">
+            <h1 id="question"></h1>
+            <div id="answers"></div>
+            <button id="submit-button">Submit</button>
+        </div>
+        <div id="result-screen" class="hidden">
+            <h1 id="result"></h1>
+            <button id="restart-button">Restart</button>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

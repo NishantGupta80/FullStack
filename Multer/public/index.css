@@ -1,0 +1,16 @@
+#profiles p{
+    display:flex;
+}
+
+#profiles{
+    border:1px solid black;
+    display:block;
+    margin:10px;
+    width:200px;
+    flex-wrap: wrap;   
+    gap: 10px;  
+    justify-content: flex-start; 
+}
+
+
+

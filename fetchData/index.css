@@ -1,0 +1,18 @@
+#items{
+    margin:0px 150px;
+}
+
+table{
+    border:1px solid black;
+
+}
+
+td{
+    border:1px solid black;
+}
+.InStock{
+    color:green;
+}
+.OutStock{
+    color:red;
+}

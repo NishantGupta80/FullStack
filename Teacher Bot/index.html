@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #previous-btn {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Ai Quiz</h3>
+  <h4 id="question-label"></h4>
+  <textarea name="" id="answer-box" cols="80" rows="30"></textarea>
+  <br>
+  <br>
+  <button id="submit-btn">Submit</button>
+  <button id="next-btn">Next</button>
+  <button id="previous-btn">Previous</button>
+  <h4>Response</h4>
+  <span id="response-text"></span>
+  <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+      </script>
+  <script type="module" src="index.js">
+  </script>
+</body>
+
+</html>

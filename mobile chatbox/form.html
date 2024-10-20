@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Type your message here..." required></textarea>
+
+        <button onclick="callUs()">Call Us</button>
+        <button onclick="chatWithUs()">Chat with Us</button>
+        <button onclick="mailUs()">Mail Us</button>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
